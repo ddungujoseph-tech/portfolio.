@@ -1,0 +1,95 @@
+/* Custom Variables */
+:root {
+    --primary-color: #0f172a; /* Navy */
+    --accent-color: #0d9488;  /* Teal */
+    --text-dark: #1e293b;
+    --light-bg: #f8fafc;
+}
+
+/* Typography Overrides */
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+h1, h2, h3, .navbar-brand {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Custom Component Styles */
+.navbar {
+    background-color: white;
+    padding: 1rem 0;
+}
+
+.text-accent {
+    color: var(--accent-color);
+}
+
+.hero-section {
+    min-height: 80vh;
+    background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+}
+
+.section-title {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background: var(--accent-color);
+    bottom: 0;
+    left: 25%;
+}
+
+/* Button Customization */
+.btn-custom {
+    background-color: var(--accent-color);
+    color: white;
+    border-radius: 8px;
+    padding: 0.8rem 2rem;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn-custom:hover {
+    background-color: #0b7a6f;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(13, 148, 136, 0.3);
+}
+
+/* Card Overrides */
+.project-card {
+    transition: transform 0.3s ease;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.bg-custom {
+    background-color: #e2e8f0 !important;
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+/* Form Controls */
+.custom-input {
+    border: 2px solid #e2e8f0;
+    padding: 0.75rem;
+}
+
+.custom-input:focus {
+    border-color: var(--accent-color);
+    box-shadow: none;
+}
